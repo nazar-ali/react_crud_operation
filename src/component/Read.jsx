@@ -13,10 +13,9 @@ import TablePagination from "@mui/material/TablePagination";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDeleteLeft, faCheckCircle,faEdit } from '@fortawesome/free-solid-svg-icons'
+import { faDeleteLeft,faEdit } from '@fortawesome/free-solid-svg-icons'
 
 const Read = ({ loading, data, error, handleUpdate, onDelete, handleView ,handleCheck}) => {
-  const checkBox = <FontAwesomeIcon icon={faCheckCircle} />
   const Edit = <FontAwesomeIcon icon={faEdit} />
   const cancelled = <FontAwesomeIcon icon={faDeleteLeft} />
 
